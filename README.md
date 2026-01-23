@@ -8,4 +8,4 @@ Use the `axios` module to make a GET, PUT, POST, or DELETE network call. Wrap th
 
 ## Routing
 
-Use the `react-router` module to define `Route` components with _path_ attributes and `Link` components with _to_ attributes. When linking to a route you defined, include only the path for that route as the _to_
+Use the `react-router` module to define `Route` components with _path_ attributes and `Link` components with _to_ attributes. When linking to a route you defined, include only the path for that route as the _to_.
