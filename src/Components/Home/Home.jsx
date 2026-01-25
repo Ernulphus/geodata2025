@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <>
       <h1>
-        My awesome geodata site
+        My cool geodata site
       </h1>
       <Link to="/States" >
         View States

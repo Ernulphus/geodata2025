@@ -1,7 +1,14 @@
-import { expect, it } from 'vitest';
-import Home from "./Home";
+import { describe, it, expect } from 'vitest'
+import { render } from '@testing-library/react'
+import Home from './Home'
+import { MemoryRouter } from 'react-router'
 
-it('looks correct', () => {
-  const result = (<Home />);
-  expect(result).toMatchScreenshot('home-page');
+describe('Home', () => {
+  it('looks correct', () => {
+    const { container } = render(
+    <MemoryRouter>
+      <Home />
+    </MemoryRouter>);
+    expect(container).toMatchSnapshot()
+  })
 })

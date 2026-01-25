@@ -1,3 +1,15 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`Renders home 1`] = `<Home />`;
+exports[`Home > looks correct 1`] = `
+<div>
+  <h1>
+    My cool geodata site
+  </h1>
+  <a
+    data-discover="true"
+    href="/States"
+  >
+    View States
+  </a>
+</div>
+`;
