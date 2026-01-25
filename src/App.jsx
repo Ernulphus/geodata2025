@@ -1,20 +1,8 @@
 
 import './App.css'
-import { Routes, Route, Link } from 'react-router'
+import { Routes, Route } from 'react-router'
+import Home from './Components/Home/Home'
 import States from './Components/States/States'
-
-function Home() {
-  return (
-    <>
-      <h1>
-        My geodata site
-      </h1>
-      <Link to="/States" >
-        View States
-      </Link>
-    </>
-  )
-}
 
 function App() {
   return (
