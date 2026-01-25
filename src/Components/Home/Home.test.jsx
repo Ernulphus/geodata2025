@@ -1,7 +1,7 @@
 import { expect, it } from 'vitest';
 import Home from "./Home";
 
-it('Renders home', () => {
+it('looks correct', () => {
   const result = (<Home />);
-  expect(result).toMatchSnapshot();
+  expect(result).toMatchScreenshot('home-page');
 })
