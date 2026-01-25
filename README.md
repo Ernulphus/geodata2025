@@ -1,3 +1,9 @@
+# Geodata
+
+This repo provides sample code for getting started in Professor Callahan's SWE course for the 2025-2026 school year. The site reads, manipulates, and displays data from the backend.
+
+
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite.
