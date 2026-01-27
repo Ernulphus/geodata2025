@@ -1,0 +1,15 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Homepage > matches snapshot 1`] = `
+<div>
+  <h1>
+    My awesome geodata site
+  </h1>
+  <a
+    data-discover="true"
+    href="/States"
+  >
+    View States
+  </a>
+</div>
+`;

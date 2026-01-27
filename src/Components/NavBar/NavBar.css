@@ -1,0 +1,10 @@
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  position: fixed;
+  top: 15px;
+  left: 25%;
+  width: 50%;
+  z-index: 10;
+}

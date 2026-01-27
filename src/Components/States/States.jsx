@@ -33,16 +33,24 @@ function States() {
     <>
       <h1>State Data</h1>
       <ul>
-        { results && 
-          Object.keys(results).map((objKey) => {
-            return (
+        { results 
+          ? Object.keys(results).map((objKey) => (
               <StateCard stateData={results[objKey]} key={objKey} />
-            )
-          })
+            ))
+          : (<p>Loading...</p>)
         }
       </ul>
     </>
   )
 }
+
+// expression ? do-if-true : do-if-false;
+/*
+if (expression) {
+return do-if-true}
+else {return do-if-false}
+
+
+*/
 
 export default States;
