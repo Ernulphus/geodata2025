@@ -12,9 +12,11 @@
   },
   "dependencies": {
     "axios": "^1.13.2",
+    "maps": "^0.3.3",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
-    "react-router": "^7.10.1"
+    "react-router": "^7.10.1",
+    "react-simple": "^1.2.3"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.1",
