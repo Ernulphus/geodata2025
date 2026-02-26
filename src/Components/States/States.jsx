@@ -1,8 +1,9 @@
 import { useState, useEffect } from 'react'
 import axios from 'axios'
 
+import StateMap from './StateMap';
+
 function StateCard({ stateData }) {
-  console.log(stateData);
   const { name, latitude, longitude } = stateData;
   return (
     <div className="state-card">
@@ -18,6 +19,7 @@ function StateCard({ stateData }) {
 
 function States() {
   const [results, setResults] = useState();
+  const [chosenState, setChosenState] = useState();
   const baseURL = 'https://geodata2025.pythonanywhere.com';
   const stateReadEP = 'state/read';
 
@@ -28,13 +30,17 @@ function States() {
       });
   }, []);
 
-
   return (
     <>
       <h1>State Data</h1>
+      <StateMap
+        setChosenState={setChosenState}
+      />
       <ul>
         { results 
-          ? Object.keys(results).map((objKey) => (
+          ? Object.keys(results).filter((objKey) => {
+            return objKey === chosenState
+          }).map((objKey) => (
               <StateCard stateData={results[objKey]} key={objKey} />
             ))
           : (<p>Loading...</p>)
