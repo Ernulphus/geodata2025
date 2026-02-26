@@ -1,0 +1,11 @@
+svg {
+  width: 50rem;
+}
+
+path {
+  transition: fill 0.1s ease-in-out;
+}
+
+path:hover {
+  fill: teal;
+}
